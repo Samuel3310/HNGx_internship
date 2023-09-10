@@ -18,7 +18,7 @@ app.get("/api", (req, res) => {
         track: track,
         github_file_url: githubbFileUrl,
         github_repo_url: githubRepoUrl,
-        status_code: 200,
+        status_code: "200",
     };
 
     res.json(response);
