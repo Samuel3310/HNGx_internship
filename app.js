@@ -3,8 +3,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get("/api", (req, res) => {
-    const slackName = req.query.slack_name;
-    const track = req.query.track;
+    const slackName = "Sammabbyl";
+    const track = "backend";
     const currentDate = new Date().toLocaleDateString('en-US', {weekday: 'long' });
     const currentUtcTime = new Date().toISOString();
     const githubbFileUrl = 'https://github.com/Samuel3310/HNGx_internship/blob/main/app.js';
