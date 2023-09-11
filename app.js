@@ -6,7 +6,7 @@ app.get("/api", (req, res) => {
     const slackName = "Sammabbyl";
     const track = "backend";
     const currentDate = new Date().toLocaleDateString('en-US', {weekday: 'long' });
-    const currentUtcTime = new Date().toISOString();
+    const currentUtcTime = new Date().toISOString().split(".")[0] + "Z";
     const githubbFileUrl = 'https://github.com/Samuel3310/HNGx_internship/blob/main/app.js';
     const githubRepoUrl = 'https://github.com/Samuel3310/HNGx_internship';
 
